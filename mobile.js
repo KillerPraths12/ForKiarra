@@ -83,6 +83,8 @@ class Paper {
 
 const papers = Array.from(document.querySelectorAll('.paper'));
 
+document.getElementById("body").style.overflow = "hidden";
+
 papers.forEach(paper => {
   const p = new Paper();
   p.init(paper);
